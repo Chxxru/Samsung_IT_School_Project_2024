@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/task_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="House"
+        android:textSize="25sp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        app:layout_constraintVertical_bias="0.26"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/select_translation_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Выберите перевод"
+        android:textSize="25sp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+        android:textColor="@color/light_text"
+        app:layout_constraintBottom_toTopOf="@+id/task_text"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/answ1_btn"
+        style="@style/Widget.Material3.Button.OutlinedButton"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginHorizontal="15dp"
+        android:text="num1"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/dark_text"
+        app:cornerRadius="15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/answ2_btn"
+        app:layout_constraintEnd_toEndOf="@+id/select_translation_tv"
+        app:layout_constraintStart_toEndOf="@+id/answ2_btn" />
+
+    <Button
+        android:id="@+id/answ4_btn"
+        style="@style/Widget.Material3.Button.OutlinedButton"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginVertical="15dp"
+        android:text="fdsfgsdfdsdfaafdfg"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/dark_text"
+        app:cornerRadius="15dp"
+        android:padding="4dp"
+        app:layout_constraintEnd_toEndOf="@+id/answ1_btn"
+        app:layout_constraintStart_toStartOf="@+id/answ1_btn"
+        app:layout_constraintTop_toBottomOf="@+id/answ1_btn" />
+
+    <Button
+        android:id="@+id/answ2_btn"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginVertical="15dp"
+        style="@style/Widget.Material3.Button.OutlinedButton"
+        android:text="num2"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/black"
+        app:cornerRadius="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/answ1_btn"
+        app:layout_constraintStart_toStartOf="@+id/select_translation_tv"
+        app:layout_constraintTop_toBottomOf="@+id/task_text"
+        app:layout_constraintVertical_bias="0.27" />
+
+    <Button
+        android:id="@+id/answ3_btn"
+        style="@style/Widget.Material3.Button.OutlinedButton"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginVertical="15dp"
+        android:text="num3"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/dark_text"
+        app:cornerRadius="15dp"
+        app:layout_constraintEnd_toEndOf="@+id/answ2_btn"
+        app:layout_constraintStart_toStartOf="@+id/answ2_btn"
+        app:layout_constraintTop_toBottomOf="@+id/answ2_btn" />
+        " />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

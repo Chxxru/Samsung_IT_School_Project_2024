@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="red">#bd3937</color>
+
+    <color name="dark_button">#2F2F2F</color>
+    <color name="dark_text">#535353</color>
+    <color name="light_text">#7B7B7B</color>
+    <color name="light_button">#F3F3F3</color>
+    <color name="default_button">#CECECE</color>
+    <color name="Notes">#979797</color>
+</resources>
