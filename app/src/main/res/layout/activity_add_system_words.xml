@@ -16,15 +16,29 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
+
         <TextView
             android:id="@+id/ang_wd_TV"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
+            android:layout_marginTop="78dp"
+            android:layout_gravity="top"
             android:gravity="center"
             android:text="To appear"
             android:textAppearance="@style/TextAppearance.AppCompat.Body2"
             android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/example_TV"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="bottom"
+            android:layout_marginHorizontal="14dp"
+            android:layout_marginBottom="86dp"
+            android:gravity="center_horizontal"
+            android:text="Smoke appeared on the horizon"
+            android:textColor="@color/Notes"
+            android:textSize="16sp" />
 
         <TextView
             android:id="@+id/rus_wd_TV"
@@ -33,13 +47,15 @@
             android:layout_gravity="bottom"
             android:layout_margin="17dp"
             android:gravity="right"
-            android:text="появляться"
+            android:text="Жертвовать, вносить свой вклад"
             android:textAppearance="@style/TextAppearance.AppCompat.Display1"
             android:textColor="@color/dark_text"
             android:textSize="17sp" />
 
 
     </androidx.cardview.widget.CardView>
+
+
 
     <TextView
         android:id="@+id/textView4"
@@ -86,16 +102,7 @@
 
         app:layout_constraintEnd_toEndOf="@+id/wor_To_Learn_CV"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
-    <ImageButton
-        android:id="@+id/exitBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/go_back"
-        android:backgroundTintMode="screen"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_margin="5dp"
-        android:contentDescription="Go back" />
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

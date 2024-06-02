@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/group_24"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/MaterialAlertDialog.Material3.Body.Text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Помню"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        style="@style/MaterialAlertDialog.Material3.Body.Text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Показывает сколько слов у вас в долгосрочной памяти.
+Время от времени они будут появляться в тестах, чтобы убедиться, что ты их
+никогда не забудешь"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        style="@style/MaterialAlertDialog.Material3.Body.Text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Учу"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        style="@style/MaterialAlertDialog.Material3.Body.Text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Карточки в кратковременной памяти. Слова будут появляться в тестах реже, если ты часто отвечаешь НЕ ПОМНЮ
+или ПЛОХО ПОМНЮ. Реже - если ты отвечаешь ЗНАЮ. Данная система основана на методике интервальных повторений
+и поможет лучше запомнить слово"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</LinearLayout>

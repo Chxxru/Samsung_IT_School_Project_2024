@@ -3,15 +3,17 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:id="@+id/add_cust_constraintLy">
 
     <TextView
 
+        android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Добавьте своё слово:"
-        android:textSize="30sp"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="30sp"
         app:layout_constraintBottom_toTopOf="@+id/angInputEt"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -32,33 +34,47 @@
         android:textColor="@color/dark_text"/>
 
     <EditText
+        android:id="@+id/add_example_et"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/dark_text"
+        android:hint="Пример использования"
+        android:importantForAutofill="no"
+        android:gravity="bottom"
+        android:maxLength="120"
+        android:inputType="textMultiLine"
+        android:lines="2"
+        app:layout_constraintBottom_toTopOf="@id/save_User_Wd_Btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@+id/ruInputET" />
+
+    <EditText
         android:id="@+id/angInputEt"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="260dp"
+        android:layout_marginBottom="340dp"
         android:backgroundTint="@color/dark_text"
         android:hint="Английский"
         android:importantForAutofill="no"
         android:inputType="textAutoComplete"
         android:maxLength="@integer/material_motion_duration_short_1"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintEnd_toEndOf="@+id/add_example_et"
+        app:layout_constraintStart_toStartOf="@+id/add_example_et" />
 
     <EditText
         android:id="@+id/ruInputET"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="104dp"
         android:hint="Русский"
         android:importantForAutofill="no"
         android:inputType="textAutoComplete"
         android:maxLength="@integer/material_motion_duration_short_1"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/add_example_et"
+        app:layout_constraintBottom_toTopOf="@id/add_example_et"
+        app:layout_constraintStart_toStartOf="@+id/add_example_et"
         app:layout_constraintTop_toBottomOf="@+id/angInputEt"
         app:layout_constraintVertical_bias="0.378" />
 
